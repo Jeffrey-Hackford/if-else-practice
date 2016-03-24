@@ -4,24 +4,26 @@ $(document).ready(function() {
   var gender = $("#genderInput").val();
   console.log(age);
 
-  if (age === 1) {
-    $("#output").show();
-    $("#age").append(age);
+  if (age === 1 && gender === "male") {
+    $(".output").removeClass();
+    $("body").addClass(".young");
+    $(".young").show();
   }
 
-  if (age === 2) {
-    $("#output").show();
-    $("#age").append(age);
+  if (age === 2 && gender === "male") {
+    $(".output").removeClass();
+    $("body").addClass(".young-adult-male");
+    $(".young-adult-male").show();
+  }
+
+  if (age === 2 && gender === "female") {
+    $(".output").removeClass();
+    $("body").addClass(".young-adult-female");
+    $(".young-adult-female").show();
   }
 
   if (age === 3) {
     $("#output").show();
-    $("#age").append(age);
-  }
-
-  if (age === 4) {
-    $("#output").show();
-    $("#age").append(age);
   }
 
   if (gender === "male") {
@@ -37,23 +39,3 @@ $(document).ready(function() {
 
   });
 });
-
-
-
-
-
-
-
-
-
-//   $("#output").show();
-//   $("#age").text(age);
-//   $("#gender").text(gender);
-//
-//   if (age === 1)  {
-//     $("#young").show();
-//   }
-//
-//   event.preventDefault();
-//   });
-// });

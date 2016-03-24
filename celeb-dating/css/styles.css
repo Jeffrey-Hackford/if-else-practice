@@ -1,7 +1,11 @@
-#output {
+.young {
   display: none;
 }
 
-h5 {
-  display: none
+.young-adult-male {
+  display: none;
+}
+
+.young-adult-female {
+  display: none;
 }
